@@ -13,6 +13,7 @@ interface Icons {
 const ButtonEmail: React.FC<IconsSvg> = ({ array }) => {
   const [toolTipVisible, setToolTipVisible] = useState<string | null>(null);
   const [emailCopied, setEmailCopied] = useState<boolean>(false);
+  const emailAddress = 'jerearrieta2254@gmail.com';
 
   const handleCopyClick = (email: string) => {
     navigator.clipboard.writeText(email).then(() => {
@@ -24,15 +25,18 @@ const ButtonEmail: React.FC<IconsSvg> = ({ array }) => {
       }, 1500);
     })
   }
+
   const handleRedirectClick = () => {
-    window.open('https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new', '_blank');
-  }
+    const emailLink = `mailto:${emailAddress}?subject=&body=`;
+    window.open(emailLink, '_blank');
+  };
+  
   return (
     <>
       {array.map((icon) => (
         <button
           key={icon.name}
-          className="rounded-xl bg-indigo-500 dark:bg-indigo-500 w-16 flex items-center justify-center"
+          className="rounded-xl bg-indigo-500 dark:bg-indigo-500 w-12 sm:w-16 flex items-center justify-center"
           onMouseEnter={() => {
             if(emailCopied === true) setToolTipVisible(null)
             else setToolTipVisible(icon.name)
@@ -40,7 +44,7 @@ const ButtonEmail: React.FC<IconsSvg> = ({ array }) => {
           } 
           onMouseLeave={() => setToolTipVisible(null)}
           onClick={() => {
-            if(icon.name === 'Copy email') handleCopyClick('jeremias.arrieta2254@hotmail.com')
+            if(icon.name === 'Copy email') handleCopyClick('jerearrieta2254@gmail.com')
             else handleRedirectClick()
           }
           }
@@ -52,7 +56,7 @@ const ButtonEmail: React.FC<IconsSvg> = ({ array }) => {
             alt="Icon-email" 
             />
           {toolTipVisible === icon.name && (
-            <div className="absolute transform bg-white text-black p-1 text-sm rounded mb-20">
+            <div className="absolute transform bg-indigo-100 text-indigo-500 dark:bg-white dark:text-black p-1 text-sm rounded mb-20">
               <span className="">{icon.name}</span>
             </div>
           )}
