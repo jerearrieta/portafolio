@@ -8,7 +8,6 @@ interface ProjectCardProps {
   imageSrc: string;
   technologies: Array<Technology>;
   url: string;
-  urlButton: string
 }
 
 interface Technology {
@@ -22,13 +21,12 @@ const CardProject: React.FC<ProjectCardProps> = ({
   imageSrc,
   url,
   technologies,
-  urlButton,
 }) => {
   const [toolTipVisible, setToolTipVisible] = useState<string | null>(null);
 
   return (
-    <div>
-      <div className="flex gap-5 mb-10">
+    <section>
+      <div className="sm:flex gap-5 mb-10 sm:px-0 px-5">
         <a href={url} target="_blank">
           <div className="relative rounded-xl overflow-hidden flex bg-indigo-100 dark:bg-gray-700">
             <div className="rounded-lg transition-all duration-500 hover:translate-x-5 hover:translate-y-5">
@@ -45,7 +43,7 @@ const CardProject: React.FC<ProjectCardProps> = ({
 
         <div className="flex flex-col self-center gap-3">
           <div>
-            <h3 className="font-bold text-3xl text-slate-600 dark:text-white">{title}</h3>
+            <h3 className="font-bold text-3xl text-slate-600 dark:text-white pt-2">{title}</h3>
           </div>
           <div>
             <p className="text-gray-600 dark:text-white text-lg">{description}</p>
@@ -66,7 +64,7 @@ const CardProject: React.FC<ProjectCardProps> = ({
                   height={400}
                 />
                 {toolTipVisible === tecnology.name && (
-                  <div className="absolute transform bg-white text-black p-1 text-sm rounded mt-1 ">
+                  <div className="absolute transform bg-indigo-100 text-indigo-500 dark:bg-white dark:text-black p-1 text-sm rounded mt-1 ">
                     <span className="">{tecnology.name}</span>
                   </div>
                 )}
@@ -75,7 +73,7 @@ const CardProject: React.FC<ProjectCardProps> = ({
           </div>
           <div>
             <a
-              href={urlButton}
+              href="https://github.com/jerearrieta/ITBANK-2023"
               target="_blank"
             >
               <button className="flex p-3 mt-3 w-auto text-white dark:text-black font-bold dark:font-bold bg-slate-800 dark:bg-white rounded-md transition-all gap-2 hover:gap-5">
@@ -114,7 +112,7 @@ const CardProject: React.FC<ProjectCardProps> = ({
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
