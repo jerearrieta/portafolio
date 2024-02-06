@@ -42,22 +42,6 @@ const projects = [
     ],
     urlButton: 'https://github.com/EzequielDiaz1/Northern-Lights'
   },
-  {
-    title: "Northern Lights",
-    description:
-      "It is a project for a client to manage orders for their business",
-    imageSrc: "/images/northern.png",
-    url: 'https://northern-lights-chi.vercel.app/admin',
-    darkMode: true,
-    technologies: [
-      { name: "Next.js", icon: "icons/next.svg" },
-      { name: "React", icon: "icons/react.svg" },
-      { name: "Tailwind", icon: "icons/tailwind.svg" },
-      { name: "Node.js", icon: "icons/node-js.svg" },
-      { name: "Postgresql", icon: "icons/postgresql.svg" },
-    ],
-    urlButton: 'https://github.com/EzequielDiaz1/Northern-Lights'
-  },
 ];
 
 const socialsData = [
