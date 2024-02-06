@@ -32,6 +32,22 @@ export default function Home() {
         { name: "Django", icon: "icons/django.svg" },
         { name: "Sql", icon: "icons/sql.svg" },
       ],
+      urlButton: 'https://github.com/jerearrieta/ITBANK-2023',
+    },
+    {
+      title: "Northern Lights",
+      description:
+        "It is a project for a client to have control and manage the orders of their business.",
+      imageSrc: "/images/northern.png",
+      url: "https://northern-lights-chi.vercel.app/admin",
+      technologies: [
+        { name: "Next.js", icon: darkMode ? "icons/next.svg" : "icons/next_black.svg"},
+        { name: "React", icon: "icons/react.svg" },
+        { name: "Tailwind", icon: "icons/tailwind.svg" },
+        { name: "Express", icon: "icons/node-js.svg" },
+        { name: "Postgresql", icon: "icons/postgresql.svg" },
+      ],
+      urlButton: 'https://github.com/EzequielDiaz1/Northern-Lights',
     },
   ];
 
@@ -73,6 +89,7 @@ export default function Home() {
             imageSrc={project.imageSrc}
             url={project.url}
             technologies={project.technologies}
+            urlButton={project.urlButton}
           />
         ))}
       </div>

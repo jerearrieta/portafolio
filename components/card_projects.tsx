@@ -8,6 +8,7 @@ interface ProjectCardProps {
   imageSrc: string;
   technologies: Array<Technology>;
   url: string;
+  urlButton: string
 }
 
 interface Technology {
@@ -21,6 +22,7 @@ const CardProject: React.FC<ProjectCardProps> = ({
   imageSrc,
   url,
   technologies,
+  urlButton,
 }) => {
   const [toolTipVisible, setToolTipVisible] = useState<string | null>(null);
 
@@ -29,7 +31,7 @@ const CardProject: React.FC<ProjectCardProps> = ({
       <div className="sm:flex gap-5 mb-10 sm:px-0 px-5">
         <a href={url} target="_blank">
           <div className="relative rounded-xl overflow-hidden flex bg-indigo-100 dark:bg-gray-700">
-            <div className="rounded-lg transition-all duration-500 hover:translate-x-5 hover:translate-y-5">
+            <div className="rounded-lg transition-all duration-500 hover:translate-x-5 hover:translate-y-5 sm:w-96">
               <Image
                 src={imageSrc}
                 width={400}
@@ -73,7 +75,7 @@ const CardProject: React.FC<ProjectCardProps> = ({
           </div>
           <div>
             <a
-              href="https://github.com/jerearrieta/ITBANK-2023"
+              href={urlButton}
               target="_blank"
             >
               <button className="flex p-3 mt-3 w-auto text-white dark:text-black font-bold dark:font-bold bg-slate-800 dark:bg-white rounded-md transition-all gap-2 hover:gap-5">
