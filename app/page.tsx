@@ -38,7 +38,7 @@ export default function Home() {
       title: "Northern Lights",
       description:
         "It is a project for a client to have control and manage the orders of their business.",
-      imageSrc: "/images/northern.png",
+      imageSrc: "/images/northern_lights.png",
       url: "https://northern-lights-chi.vercel.app/admin",
       technologies: [
         { name: "Next.js", icon: darkMode ? "icons/next.svg" : "icons/next_black.svg"},
