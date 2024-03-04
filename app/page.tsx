@@ -24,7 +24,7 @@ export default function Home() {
       description:
         "It is a final homebanking project carried out for the ITBA university.",
       imageSrc: "/images/guardian_bank.PNG",
-      url: "https://itbank-beta.vercel.app/",
+      url: "https://github.com/jerearrieta/ITBANK-2023",
       technologies: [
         { name: "Next.js", icon: darkMode ? "icons/next.svg" : "icons/next_black.svg"},
         { name: "React", icon: "icons/react.svg" },
@@ -39,7 +39,7 @@ export default function Home() {
       description:
         "It is a project for a client to have control and manage the orders of their business.",
       imageSrc: "/images/northern_lights.PNG",
-      url: "https://northern-lights-chi.vercel.app/admin",
+      url: "https://github.com/EzequielDiaz1/Northern-Lights",
       technologies: [
         { name: "Next.js", icon: darkMode ? "icons/next.svg" : "icons/next_black.svg"},
         { name: "React", icon: "icons/react.svg" },

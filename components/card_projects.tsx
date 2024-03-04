@@ -28,7 +28,7 @@ const CardProject: React.FC<ProjectCardProps> = ({
 
   return (
     <section>
-      <div className="sm:flex gap-5 mb-10 sm:px-0 px-5">
+      <div className="sm:flex gap-5 mb-10 sm:px-0 px-5 items-end">
         <a href={url} target="_blank">
           <div className="relative rounded-xl overflow-hidden flex bg-indigo-100 dark:bg-gray-700">
             <div className="rounded-lg transition-all duration-500 hover:translate-x-5 hover:translate-y-5 sm:w-96">
@@ -37,7 +37,7 @@ const CardProject: React.FC<ProjectCardProps> = ({
                 width={400}
                 height={400}
                 alt="Project"
-                className="w-full object-cover rounded-lg"
+                className="w-full object-cover rounded-lg items-center"
               />
             </div>
           </div>
