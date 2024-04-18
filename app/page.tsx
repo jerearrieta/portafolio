@@ -49,6 +49,21 @@ export default function Home() {
       ],
       urlButton: 'https://github.com/EzequielDiaz1/Northern-Lights',
     },
+    {
+      title: "E-commerce",
+      description:
+        "E-commerce using Next.js on the frontend, Express.js and Axios on the backend to interact with a PostgreSQL database.",
+      imageSrc: "/images/ecommerce.PNG",
+      url: "https://github.com/jerearrieta/E-commerce",
+      technologies: [
+        { name: "Next.js", icon: darkMode ? "icons/next.svg" : "icons/next_black.svg"},
+        { name: "React", icon: "icons/react.svg" },
+        { name: "Tailwind", icon: "icons/tailwind.svg" },
+        { name: "Express", icon: "icons/node-js.svg" },
+        { name: "Postgresql", icon: "icons/postgresql.svg" },
+      ],
+      urlButton: 'https://github.com/jerearrieta/E-commerce',
+    },
   ];
 
   const socialsData = [
