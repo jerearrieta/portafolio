@@ -64,6 +64,21 @@ export default function Home() {
       ],
       urlButton: 'https://github.com/jerearrieta/E-commerce',
     },
+    {
+        title: "Refrimax",
+        description:
+          "I created a webpage for a client selling refrigeration parts, with an admin panel to manage and add products.",
+        imageSrc: "/images/refrimax.PNG",
+        url: "https://github.com/jerearrieta/Refrimax",
+        technologies: [
+          { name: "Next.js", icon: darkMode ? "icons/next.svg" : "icons/next_black.svg"},
+          { name: "React", icon: "icons/react.svg" },
+          { name: "Tailwind", icon: "icons/tailwind.svg" },
+          { name: "Express", icon: "icons/node-js.svg" },
+          { name: "Postgresql", icon: "icons/postgresql.svg" },
+        ],
+        urlButton: 'https://github.com/jerearrieta/Refrimax',
+      },
   ];
 
   const socialsData = [
