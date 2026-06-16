@@ -22,7 +22,7 @@ export default function AboutMe() {
           </p>
         </div>
         <div className="flex flex-col items-start gap-3 mt-3">
-          <a href="pdf/cv.pdf" download='Cv - Jeremias Arrieta'>
+          <a href="public/pdf/Cv Arrieta, Jeremias.pdf" download='Cv - Jeremias Arrieta'>
             <button className="flex items-center text-sm gap-1 py-2 px-4 rounded-lg font-semibold bg-indigo-100 dark:bg-indigo-500 text-indigo-500 dark:text-indigo-100 hover:bg-opacity-80">
               <div className="">
                 <svg
